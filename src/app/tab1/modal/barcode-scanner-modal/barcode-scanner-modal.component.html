@@ -1,0 +1,22 @@
+<!-- <ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-button color="medium" (click)="cancel()">Cancel</ion-button>
+  </ion-buttons>
+  <ion-title>Scaneie um código de barras</ion-title>
+</ion-toolbar> -->
+
+<ion-content [fullscreen]="true">
+  <div class="close-icon-container" (click)="cancel()">
+    <ion-icon name="close-circle" />
+  </div>
+
+  @if(isRead) {
+    <zxing-scanner
+      [tryHarder]="true"
+      previewFitMode="cover"
+      [formats]="formats"
+      [torch]="enableTorch"
+      (scanSuccess)="handleSuccess($event)"
+    />
+  }
+</ion-content>
