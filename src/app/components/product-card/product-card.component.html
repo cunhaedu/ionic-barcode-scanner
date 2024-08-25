@@ -1,0 +1,5 @@
+<ion-card (click)="selected.emit()">
+  <img [src]="imagePath()" [alt]="title()"  />
+
+  <ion-label>{{title()}}</ion-label>
+</ion-card>

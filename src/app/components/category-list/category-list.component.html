@@ -1,0 +1,15 @@
+<ion-list>
+  <ion-grid>
+    <ion-row>
+      @for(category of categories(); track $index) {
+        <ion-col size="6">
+          <app-product-card
+            [imagePath]="category.image"
+            [title]="category.title"
+            (selected)="handleNavigateToCategory(category)"
+          />
+        </ion-col>
+      }
+    </ion-row>
+  </ion-grid>
+</ion-list>

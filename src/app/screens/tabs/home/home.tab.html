@@ -1,0 +1,19 @@
+<app-home-header />
+
+<ion-content [fullscreen]="true">
+  <app-searchbar />
+
+  <app-home-banners />
+
+  <div class="category-list-container">
+    <ion-text color="dark">Categorias</ion-text>
+    <app-category-list />
+  </div>
+
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button (click)="scanProduct()">
+      <ion-icon name="barcode-outline" color="light" />
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

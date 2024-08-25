@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">healthpet</string>
-    <string name="title_activity_main">healthpet</string>
-    <string name="package_name">ionic.healthpet</string>
-    <string name="custom_url_scheme">ionic.healthpet</string>
+    <string name="app_name">grocery list</string>
+    <string name="title_activity_main">grocery list</string>
+    <string name="package_name">ionic.grocery</string>
+    <string name="custom_url_scheme">ionic.grocery</string>
 </resources>

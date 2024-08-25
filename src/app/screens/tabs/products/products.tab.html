@@ -1,0 +1,30 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-title>
+      Produtos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-grid>
+      <ion-row>
+        @for(product of products(); track $index) {
+          <ion-col size="6">
+            <app-product-card
+            [imagePath]="product.image"
+            [title]="product.title"
+          />
+          </ion-col>
+        }
+      </ion-row>
+    </ion-grid>
+  </ion-list>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button (click)="scanProduct()">
+      <ion-icon name="barcode-outline" color="light" />
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
